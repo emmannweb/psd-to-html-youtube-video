@@ -89,7 +89,7 @@
 //SERVICES
 .services_wrapper{
   padding-top: 70PX;
-  padding-bottom: 70px;
+  padding-bottom: 200px;
   .services_main_title{
     display: flex;
     justify-content: center;
@@ -149,4 +149,109 @@
       }
     }
   }
+}
+
+
+
+// ABOUT TEAM
+.about_team{
+  position: relative;
+  padding: 0!important;
+  margin: 0;
+
+  .polygon{
+    min-height: 500px;
+    background: #2ebaee;
+    padding-top: 102px;
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    clip-path: polygon(100% 0, 100% 58%, 100% 100%, 0 99%, 0 72%);
+  }
+
+  .overlay_polygon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    width: 100%;
+    .container{
+      .row{
+        .col-sm-6{
+          .about_desc{
+            h2{
+              font-family: 'Montserrat', sans-serif;
+              padding-bottom: 20px;
+            }
+            p{
+              font-family: 'Montserrat', sans-serif;
+              font-size: 14px;
+            }
+            .button_container{
+              a{
+                color: white;
+                text-decoration: none;
+                background: #2ebaee;
+                border-radius: 30px;
+                padding: 10px 30px;
+                transition: all .5s;
+                border: 1px solid #2ebaee;
+                &:hover{
+                  background: transparent;
+                  color: #2ebaee;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+.second_col_equipe{
+  background: #2ebaee;
+  padding-bottom: 100px;
+  margin-top: -5px;
+  .container{
+    .row{
+      .about_desc_wrapper{
+        display: flex;
+        align-items: center;
+        .about_desc_seg{
+          padding-left: 48px;
+          h2{
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            padding-bottom: 20px;
+          }
+          p{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            color: white;
+          }
+          .btn_desc_seg{
+            padding-top: 20px;
+            a{
+              color: #2ebaee;
+              text-decoration: none;
+              background: white;
+              border-radius: 30px;
+              padding: 10px 30px;
+              transition: all .5s;
+              border: 1px solid white;
+              &:hover{
+                background: transparent;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
 }
