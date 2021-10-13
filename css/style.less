@@ -297,3 +297,42 @@
     }
   }
 }
+
+
+
+// porfolio
+.portfolio{
+  margin: 0!important;
+  .row{
+    .col-sm-3{
+      padding: 0;
+      .wrapper_portfolio{
+        position: relative;
+        &:hover{
+          .portfolio_overlay{
+            background: rgba(56,161,197,0.7);
+            transition: all 1s;
+          }
+        }
+        .portfolio_overlay{
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          .portfolio_title{
+            padding: 0 40px;
+            h3{
+              color:white;
+              font-family: 'Montserrat', sans-serif;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
